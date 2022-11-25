@@ -77,7 +77,7 @@ The REST API to the e-commerce app is described below.
     Vary: Accept
     []
 
-## Create a new Thing
+## Create a new Product
 
 ### Request
 

@@ -6,6 +6,13 @@ from products.serializers import ProductSerializer
 
 
 class ProductView(ListCreateAPIView):
+    """
+        post: Endpoint to Create product in Database
+        get: Endpoint to get a list of stored products from Database
+
+        url: /list/
+        params: none
+    """
     serializer_class = ProductSerializer
     permission_classes = [AllowAny, ]
 

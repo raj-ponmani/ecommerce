@@ -46,7 +46,7 @@ Follow the below project
 
 ```tree
 ecommerce/                    <- project root
-├── ecommerce/                   <- Django root
+├── ecommerce/                <- Django root
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings

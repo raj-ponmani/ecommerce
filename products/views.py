@@ -10,14 +10,14 @@ class ProductView(ListCreateAPIView):
         post: Endpoint to Create product in Database
         get: Endpoint to get a list of stored products from Database
 
-        url: /list/
+        url: api/product-list/
         params: none
     """
     serializer_class = ProductSerializer
     permission_classes = [AllowAny, ]
 
     def get_queryset(self):
-        queryset = Products.objects.all()
+        queryset = Products.objects.all().order_by('created_date')
         return queryset
 
     def create(self, request, *args, **kwargs):

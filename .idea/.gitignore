@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Distribution / packaging
+env/
+venv/
+
+# Database
+db.sqlite3
